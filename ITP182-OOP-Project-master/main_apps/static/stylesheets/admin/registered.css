@@ -1,0 +1,25 @@
+main {
+    margin: 2%;
+}
+
+
+tr, td, th {
+    text-align: center;
+    width: 15%;
+}
+.register_top {
+    color: white;
+    padding: 1% 2%;
+    margin: 0 0 1% 0 ;
+    float: left;
+}
+
+.outer-div {
+    display: flex;
+    justify-content: left;
+    align-items: inherit;
+}
+
+.inner-div {
+    display: inline-block;
+}

@@ -1,0 +1,261 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Style.css">
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Informationpage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="../Images/icon.png" />
+<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<script src="../Scripts/Scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venice</title>
+</head>
+
+<body onload="startTime()">
+
+<header>
+    <h1> Dallas Ng (180522Y) </h1>
+    <p> Web Application Assignment IT1507 </p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../index.html" title="Home">Home</a></li>
+    <li><a href="Information.html" title="BasicInformation">Information</a></li>
+    <li><a href="Food.html" title="Food">Food</a></li>
+    <li><a href="Activities.html" title="Activities">Activites</a></li>
+    <li><a href="../index.html#Map" title="Map">Map</a></li>
+	<li><a href="#Contact" title="Contact-Us">Contact Us</a></li>
+    <div class="search-bar">
+		<form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+			<button type="submit" name="b1"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search" name="t1" id="t1">
+		</form>
+	</div>
+  </ul>
+</nav>
+
+
+<section>
+    <button onclick="topFunction()" id="GoToTopBtn" title="Go to top" style="display:none">Top</button>
+
+    <div class="SectionContainer">
+        <div class="InfoNavigation">
+            <div class="SideNavigation">
+                <a href="#InfoInformation" class="InfoNavigationBlock">Info</a>
+                <a href="#InfoGeographic" class="InfoNavigationBlock">Geo</a>
+                <a href="#InfoEvents" class="InfoNavigationBlock">Season</a>
+                <a href="#InfoCurrency" class="InfoNavigationBlock">Currency</a>
+                <a href="#InfoLocalLaws" class="InfoNavigationBlock">Laws</a>
+                <a href="#InfoTransportation" class="InfoNavigationBlock">Transport</a>
+                <a href="#InfoSafety" class="InfoNavigationBlock">Safety</a>
+            </div>
+        </div>
+        
+        <div class="InfoContainer" id="InfoInformation">
+			
+				<div class="InfoBlocks">
+					<div class="InfoInformation">
+                        <h1 style="text-align:left; font-size:30px; color:#5DADE2">Basic Information</h1>
+                        <p>Venice is a city in northeastern Italy. It is situated across 118 islands that are separated by rivers, connected by bridges.</p>
+                        <p>The islands are located in the shallow Venetian Lagoon, an enclosed bay that lies between the mouths of the Po and the Piave rivers (more exactly between the Brenta and the Sile). Parts of Venice are renowned for the beauty of their settings, their architecture, and artwork.</p>
+                        <p>The name is derived from the ancient Veneti people who inhabited the region by the 10th century BCE.[5][6] The city was historically the capital of the Republic of Venice. Venice has been known as the "La Dominante," "Serenissima," "Queen of the Adriatic," "City of Water," "City of Masks," "City of Bridges," "The Floating City," and "City of Canals."</p>
+                        <p>The Republic of Venice was a major financial and maritime power during the Middle Ages and Renaissance, and a staging area for the Crusades and the Battle of Lepanto, as well as a very important center of commerce (especially silk, grain, and spice) and art in the 13th century up to the end of the 17th century. The city-state of Venice is considered to have been the first real international financial center which gradually emerged from the 9th century to its peak in the 14th century. This made Venice a wealthy city throughout most of its history.</p>
+                    </div>
+				</div>
+			<div class="parallax par1"></div>
+			
+			<div id="InfoGeographic"></div>
+            
+			<div class="InfoBuffer">			
+				<div class="InfoBlocks">
+					<div class="InfoGeographic">
+                        <h1 style="text-align:left; font-size:30px; color:#4e8181">Geographic</h1>
+                        <div id="clock" style="font-size:300%; overflow:hidden; color:#52BE80;"></div>Current time of Venice.<br/><br/>
+                        <p>Venice is an isolated sea city but it is has always had close links with the surrounding marshlands and the mainland of northern Italy.</p>
+                        <p>Orignally formed by the interaction of Adriatic tidal currents and the waters of several Alpine rivers. The lagoon has always been crucial to the survival of Venice. Its mud banks, shallows and channels are a source of income from marine and bird life and from salt pans. As an double-edged sword, it also deters invaders from coming to venice as it is very threatening to sailors and Venice is not a connected by any land.</p>
+                        <p>The layout of Venice consist of Roman influence that to shape in the early 7th century, when migrants from the mainland swelled existing fishing communities on higher mudflats and sand banks, shaping it into an urban structure.</p>
+                    </div>
+                </div>
+                <div class="parallax par2"></div>
+            </div>
+            
+			<div id="InfoEvents"></div>
+			
+			<div class="InfoBuffer">			
+				<div class="InfoBlocks">
+					<div class="InfoEvents">
+                        <h1 style="text-align:left; font-size:30px; color:#50677b">Seasonal Events</h1>
+                        <div class="EventsBox">
+                            <h3 style="color:#138D75">September-November</h3>
+                            <p>Venice empties out in fall after the summertime high season, which makes for a most magical city, not to mention some almost reasonable hotel rates. However, you will need a coat or some layers; November's temperatures range from the upper 30s to the lower 50s.</p>
+						</div>
+						
+                        <div class="EventsBox">
+                            <h3 style="color:#CB4335">December-February</h3>
+                            <p>Winter is cold with average temperatures in the 30s and 40s. Carnival commences in February, and it's a huge event in Venice, so be prepared for large crowds of mask-wearing participants. Aside from Carnival, the city is relatively quiet this time of year. You'll enjoy as much as a 25 to 30 percent decrease in hotel rates, but you'll also experience occasional flooding (especially in December) thanks to acqua alta and early closures at some of the city's top sights.</p>
+						</div>
+						
+                        <div class="EventsBox">
+                            <h3 style="color:#D4AC0D">March-May</h3>
+                            <p>Spring is a beautiful season in Venice. It's when the city defrosts – high average temperatures rise from the lower 50s in March to the lower 70s in May. The city is still waking up from its winter lull in March, so top attractions may still close early at the beginning of the spring season.</p>
+						</div>
+						
+                        <div class="EventsBox">
+                            <h3 style="color:#2E86C1">June-August</h3>
+                            <p>Venice's summer high season is very busy. Tourists cram into the expensive gondolas and hotels raise their rates. Unfortunately, you'll also experience some mild heat (expect highs in the low 80s), a somewhat pungent canal and a fair share of pesky bugs.</p>
+						</div>
+                    </div>
+                </div>
+                <div class="parallax par3"></div>
+            </div>
+            
+			<div id="InfoCurrency"></div>
+			
+			<div class="InfoBuffer">
+				<div class="InfoBlocks">
+					<div class="InfoCurrency">
+                        <h1 style="text-align:left; font-size:30px; color:#F4D03F">Currency</h1>
+                        <p>Venice uses Euro. 1 Singapore Dollar = 0.63 Euros.</p>
+                        <p>Visa and MasterCard are accepted by many, but not all, shops and restaurants in Venice. Money is the fuel that powers your Venice holiday, so it pays to know a few basic rules about cash, currency exchange, and credit cards before you leave home. Italy is part of the euro zone.</p>
+                    </div>
+                </div>
+				
+            <div class="parallax par6"></div>
+				
+            </div>
+            
+			<div id="InfoLocalLaws"></div>
+			
+			<div class="InfoBuffer">			
+				<div class="InfoBlocks"> 
+					<div class="InfoLocalLaws">
+                        <h1 style="text-align:left; font-size:30px; color:#922B21">Local Laws</h1>
+						
+                        <div class="EventsBox">
+                            <h4 style="color: #E74C3C">Why it's important to know local laws?</h4>
+                            <p>Venice is a city utterly over-run by tourists. Fair enough, money from tourism is crucial for the city. But Venice is also home to thousands of people going about their everyday business (and they're not all dependent on tourists for their livelihoods). So visitors should bear in mind that that is what they are - visitors - and make an effort to behave appropriately.</p>
+						</div>
+						
+                        <div class="EventsBox">
+                            <h4 style="color: #E74C3C">Do not block bridges</h4>
+                            <p>If you must stop on a narrow bridge to admire the view (and in picturesque areas, it's hard not to), keep out of the way and don't cause a traffic jam. Do not sit on bridges to eat your lunch unless you want to infuriate hundreds of passers-by.</p>
+                            <p>Public picnicking, incidentally, is frowned on in general and in some areas it's banned.</p>
+						</div>
+						
+                        <div class="EventsBox">
+                            <h4 style="color: #E74C3C">Boat Etiquette</h4>
+                            <p>Venice's ferries get very crowded. Boatmen will often urge passengers to move forwards ('avanti!') and to find space inside the boat. Tourists who hang around near the gangplanks will prevent other passengers from getting on and off, and will win themselves no friends. </p>
+                            <p>Don't be too worried about getting through the crowds when you reach your stop. Once your ferry has moved off from the preceding stop, head for the exit, uttering a firm 'permesso' when you need to pass someone.</p>
+						</div>
+						
+                        <div class="EventsBox">
+                            <h4 style="color: #E74C3C">Dress Decently</h4>
+                            <p>This is necessary if you want to enter churches or monuments. Women and men should basically be covered from the collar-bone to the knee, or as near as possible. Shorts and bare shoulders will give offence and may result in you being barred from religious sites, though a scarf or sarong can save the day. I've seen tourists with sleeveless tops turned away after queuing at St. Mark's.</p>
+						</div>
+                    </div>
+                </div>
+				
+            <div class="parallax par4"></div>
+			
+            </div>
+            
+			<div id="InfoTransportation"></div>
+			
+			<div class="InfoBuffer">
+				<div class="InfoBlocks">
+					<div class="InfoTransportation">
+                        <h1 style="text-align:left; font-size:30px; color:#2980B9">Transportation Matters</h1>
+						
+                        <div class="EventsBox">
+                            <p>There are many ways to travel around Venice. I am going to cover the main way excluding the niche travel </p>
+                        </div>
+						
+                        <div class="EventsBox">
+                            <h4 style="color:#414a89">Water Taxi</h4>
+                            <p>Licensed water taxis are a costly way to get around Venice, though they may prove handy when you’re late for the opera or have lots of luggage. Fares can be metered or negotiated in advance. Official rates start at €15 plus €2 per minute, €5 extra if they’re called to your hotel. There's a €10 surcharge for night trips (10pm to 6am), a €5 surcharge for additional luggage (above five pieces) and a €10 surcharge for each extra passenger above the first four. Note: if you order a water taxi through your hotel or a travel agent, you will be subject to a surcharge. Tipping isn't required.</p>
+                        </div>
+						
+                        <div class="EventsBox">
+                            <h4 style="color:#4d4d4d">Gondola</h4>
+                            <p>A gondola ride offers a view of Venice that is anything but pedestrian. Official daytime rates are €80 for 40 minutes (€100 for 35 minutes from 7pm to 8am), not including songs or tips. Additional time is charged in 20-minute increments (day/night €40/50). You may negotiate a price break in overcast weather or around noon. Agree on a price, time limit and singing in advance to avoid unexpected surcharges.</p>
+                        </div>
+						
+                        <div class="EventsBox">
+                            <h4 style="color:#517890">Getting around land</h4>
+                            <p>There are train stations around the city that are easily accessible. Riding Venice's People Mover is easy: There's only one route, and the fare is €1,50 (regardless of where you board or get off). If you have an unused ACTV land-bus ticket, you can validate that instead of buying a People Mover ticket.</p>
+                        </div>
+						
+						<div class="EventsBox">
+                            <h4 style="color:#3e476f">What to do first</h4>
+                            <p>Look for ticket-vending machines near the station entrances.</p>
+                            <p>You can pay with euro coins , banknotes (€5, €10, or €20), or a credit card. The machines have instructions in four languages. (Ignore the monthly-ticket option, which is meant for daily commuters.)</p>
+                        </div>
+						
+                        <div class="EventsBox">
+                            <h4 style="color:#49598c">After you've bought your ticket</h4>
+                            <p>After you've bought your ticket, go to the entry checkpoint and hold your ticket under the scanner with the barcode up. When the barrier opens, go through and continue upstairs via the escalator or lift.</p>
+                            <p>On the train level, you'll find a platform with glass walls and doors on both sides. An electronic sign will show the waiting time (usually no longer than a minute or two) until the next train.<p>
+                            <p>When the train arrives, doors will open on the far side of the cars to let arriving passengers disembark. A moment later, the doors will open on your side, and you'll be able to step onto the train.</p>
+                        </div>
+                    </div>
+                </div>
+				
+			<div class="parallax par5"></div>
+			
+            </div>	
+			
+            <div id="InfoSafety"></div>
+				<div class="InfoBuffer">
+					<div class="InfoBlocks">
+						<div id="InfoSafety">
+							<div class="EventsBox">
+								<h1 style="text-align:left; font-size:30px; color:#464646">Safety</h1>
+								<img src="../Images/Information/Safety.PNG" width="100%">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+</section>
+
+
+<footer>
+    <hr>
+    <h3>Our social Media</h3>
+    <a href="http://www.facebook.com" class="fa fa-facebook" style="box-sizing: unset"></a>
+    <a href="http://www.twitter.com" class="fa fa-twitter" style="box-sizing: unset"></a>
+    <a href="http://www.youtube.com" class="fa fa-youtube" style="box-sizing: unset"></a>
+    <a href="https://www.snapchat.com" class="fa fa-snapchat-ghost" style="box-sizing: unset"></a>
+    <a href="http://www.reddit.com" class="fa fa-reddit" style="box-sizing: unset"></a>
+
+    <h3>For enquires</h3>
+    <button class="boxstyle" id="Contact" onclick="document.getElementById('formbox').style.display='block'">Contact Us</button>
+    <div id="formbox" class="formbackground">
+        <form class="formcontent animate" method="get" action="HTMLs/FormProcessor.html">
+        <div class="formcontainer">
+            <span onclick="document.getElementById('formbox').style.display='none'" class="formclosebutton" title="Close page">&times;</span>
+            <div class="feedbackform">
+                <label for="Name">Name </label>
+                <input type="text" id="Name" name="Name" placeholder="Your name..">
+				
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email" placeholder="Someone@Example.com..">
+				
+                <label for="Subject">Subject</label>
+                <input type="text" id="Subject" name="Subject" placeholder="Subject">
+				
+                <label for="Text">Text</label>
+                <textarea id="Text" name="Text" placeholder="Write your feedback.." style="height:20%"></textarea>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        </form>
+    </div>
+</footer>
+
+</body>
+
+</html>

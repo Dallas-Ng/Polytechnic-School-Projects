@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Settings.master.cs" Inherits="Static_Master_User_Settings" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>
+        <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../../_Main/Main.css" />
+    <link rel="stylesheet" href="/Static/_Account/Css/Settings.css" type="text/css" runat="server" />
+    <link rel="shortcut icon" type="image" href="~/Static/_Main/Img/Icon.png" />
+
+
+    <meta name="google-signin-client_id" content="985270521060-kv52tg2o7gsfuo02siahldstlcc934ip.apps.googleusercontent.com" />
+    <script src="https://apis.google.com/js/platform.js" async="async" defer="defer"></script>
+
+    <asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div onclick="topFunction()" id="scroll"></div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/Web/Account/Dashboard.aspx">Certcess Settings</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtn_Home" runat="server" OnClick="lbtn_Home_Click" class="nav-link" CausesValidation="false">Dashboard</asp:LinkButton>
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtn_Basic" runat="server" OnClick="lbtn_Basic_Click" class="nav-link" CausesValidation="false">Basic Information</asp:LinkButton>
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtn_Password" runat="server" OnClick="lbtn_Password_Click" class="nav-link" CausesValidation="false">Change Password</asp:LinkButton>
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtn_Payment" runat="server" OnClick="lbtn_Payment_Click" class="nav-link" CausesValidation="false">Payment Settings</asp:LinkButton>
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtn_Delete" runat="server" OnClick="lbtn_Delete_Click" class="nav-link" CausesValidation="false">Close Account</asp:LinkButton>
+                    </li>
+                </ul>
+
+                <asp:ImageButton ID="ib_Notif" runat="server" CssClass="mr-3" Width="27" Height="27" src="https://img.icons8.com/officel/80/000000/mailbox-opened-flag-up.png" OnClick="btn_Notif_Click" CausesValidation="false" />
+
+                <asp:Button ID="Logout_Btn" runat="server" Text="Logout" OnClientClick="signOut()" OnClick="logout" CssClass="btn btn-danger my-2 my-md-0 shadow-sm" CausesValidation="false" />
+            </div>
+        </nav>
+
+        <main>
+            <asp:ContentPlaceHolder ID="BodyPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+    </form>
+
+    <script src="/Scripts/jquery-3.0.0.slim.min.js"></script>
+    <script src="/Scripts/umd/popper.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll').fadeIn();
+                } else {
+                    $('#scroll').fadeOut();
+                }
+            });
+            $('#scroll').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+    </script>
+
+</body>
+</html>

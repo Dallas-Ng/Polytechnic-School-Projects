@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    /*
+    font-family: 'Karla', sans-serif;
+        font-family: 'Archivo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+
+    */
+
+
+}
+
+.top-alert {
+    position: relative;
+    z-index: 99999;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    padding-top: 3.5rem;
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+
+.right_side {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033;
+    margin-right:2.5%;
+}
+
+td, th{
+    width: 33%;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.cf {
+  *zoom: 1;
+}
+
+.whiteout {
+    background-color: rgba(255, 255, 255, 0.16);
+    padding: 1%;
+}

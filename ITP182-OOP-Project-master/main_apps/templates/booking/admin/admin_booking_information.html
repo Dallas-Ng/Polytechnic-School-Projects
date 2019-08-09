@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title> Admin Booking Page </title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='aicon.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/admin/admin_booking.css') }}">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    </head>
+
+    <body style="background-image: url('{{ url_for('static', filename='images/reminders.png') }}'); background-color: black;">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Instantic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin_page/"> Admin Page <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin_overview/">Overview</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/admin_booking/none/none/none/none">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin_feedback/none/none/">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin_reminder/"> Reminders </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lost_and_found/"> Lost and Found </a>
+                    </li>
+                </ul>
+
+                <a style='color: inherit; text-decoration: none;' href="/logout/">
+                    <div class="btn btn-danger my-2 my-sm-0"> Log out </div>
+                </a>
+            </div>
+        </nav>
+
+        <div class="back">
+            <div class="row">
+                <div class="col">
+                    <div class="topcard topcard-0">
+                        <h3>Admin's Page</h3>
+                        <p>Overview of all users' deleted bookings </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <a href="/admin_booking/none/future/none/none" style="text-decoration: none;">
+                    <div class="topcard topcard-3" style="text-decoration: none;">
+                        <h3> Active Bookings </h3>
+                        <p> Total: {{ current_booking_number }} <br>
+                            Click here to see active bookings </p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                     <a href="/booking_action/update/none" style="text-decoration: none;">
+                    <div class="topcard topcard-1">
+                        <h3> Booking update </h3>
+                        <p> Information to be displayed <br>
+                            Click to update</p>
+                    </div>
+                     </a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="container-fluid cf">
+               <!-- <a href="#"> <button type="button" class="btn btn-warning" style="float:left; display: inline-block; margin-right: 1%;"> Block Dates for Bookings </button> </a>-->
+
+                <a href="/admin_booking/none/none/none/none"> <button type="button" class="btn btn-danger" style="float:right; display: inline-block; margin-right: 1%;"> Go Back </button> </a>
+            </div>
+            <hr>
+
+            <div class="container-fluid cf" >
+                <div class="container" style="float:left; width:40%; padding-left: 0;">
+                     <div class="right_side">
+                        <div class="container" style="padding: 2%;">
+                            <h2> Updating of news </h2>
+                            <hr>
+
+                            <h4> Update here </h4>
+                            <p> Is there anything you want to tell the users? </p>
+                            <p> Enter '/n' to revert to default text </p>
+                            <hr>
+
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="homepage"> Dashboard Update </label>
+                                    <input type="text" name=homepage_update class="form-control" id="homepage" placeholder="Enter Update">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dashboard"> Booking Home Update </label>
+                                    <input type="text" name=dashboard_update class="form-control" id="dashboard" placeholder="Enter Update">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary"> Save Changes </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="float:right; width: 60%; padding: 0;">
+                    <div class="right_side">
+                        <div class="container" style="padding: 2% 2% 0 2%;">
+                            <h2 style="color: #DE4D2D;"> View of customer's side </h2>
+                            <p> Shows most recent update text. </p>
+
+                            <hr>
+
+                            <h2> Dashboard </h2>
+                            <hr>
+
+                            <h5> Update Feed:  </h5>
+                            {{ home_updates }}
+                            <hr>
+                        </div>
+
+                        <div class="container" style="padding: 2%;">
+                            <h2> Booking Home Page </h2>
+                            <hr>
+
+                            <div style="box-shadow: 0 4px 8px 0 #00000033; padding: 2%;">
+                                <h5> Booking service updates </h5>
+                                <hr>
+
+                                <p> {{ booking_updates }} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+

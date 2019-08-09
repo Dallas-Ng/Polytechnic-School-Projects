@@ -1,0 +1,223 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="StyleSheets/Style.css">
+<link rel="stylesheet" type="text/css" href="StyleSheets/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="Images/icon.png" />
+<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<script src="Scripts/Scripts.js"></script>
+<meta name="viewport" content="width=device-width", initial-scale="1">
+<title>Venice</title>
+</head>
+
+<body onload="startTime()">
+
+<header>
+    <h1> Dallas Ng (180522Y) </h1>
+    <p> Web Application Assignment IT1507 </p>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html" title="Home">Home</a></li>
+		<li><a href="HTMLs/Information.html" title="BasicInformation">Information</a></li>
+		<li><a href="HTMLs/Food.html" title="Food">Food</a></li>
+		<li><a href="HTMLs/Activities.html" title="Activities">Activites</a></li>
+		<li><a href="#Map" title="Map">Map</a></li>
+		<li><a href="#Contact" title="Contact-Us">Contact Us</a></li>
+		<div class="search-bar">
+			<form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+				<button type="submit" name="b1"><i class="fa fa-search"></i></button>
+				<input type="text" placeholder="Search" name="t1" id="t1">
+			</form>
+		</div>
+	</ul>
+</nav>
+
+<section>
+    
+	<button onclick="topFunction()" id="GoToTopBtn" title="Go to top" style="display:none">Top</button>
+	
+    <div class="BoardA" id="BoardA">
+        <div class="BoardAImage">
+            <div class="BoardAImageText">
+                <h1>The Sinking Empire</h1>
+                <em><p style="font-size:0.5em">"la Dominante"</p></em>
+            </div>
+        </div>
+    </div>
+
+    <div class="Margin">
+
+    <div class="BoardB">
+        <h1>Venice's story</h1>
+        <p class="BoardBParagraph">Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals – including the Grand Canal thoroughfare – lined with Renaissance and Gothic palaces. The central square, Piazza San Marco, contains St. Mark’s Basilica, which is tiled with Byzantine mosaics, and the Campanile bell tower offering views of the city’s red roofs.<span id="BoardBDots">...</span><span id="BoardBReadMore">
+        The name is derived from the ancient Veneti people who inhabited the region by the 10th century BCE.</br></br>
+        The city was historically the capital of the Republic of Venice. Venice has been known as the "La Dominante," "Serenissima," "Queen of the Adriatic," "City of Water," "City of Masks," "City of Bridges," "The Floating City," and "City of Canals."
+        The Republic of Venice was a major financial and maritime power during the Middle Ages and Renaissance, and a staging area for the Crusades and the Battle of Lepanto, as well as a very important center of commerce (especially silk, grain, and spice) and art in the 13th century up to the end of the 17th century. The City State of Venice is considered to have been the first real international financial center which gradually emerged from the 9th century to its peak in the 14thcentury. This made Venice a wealthy city throughout most of its history.</br></br>
+        It is also known for its several important artistic movements, especially the Renaissance period. After the Napoleonic Wars and the Congress of Vienna, the Republic was annexed by the Austrian Empire, until it became part of the Kingdom of Italy in 1866, following a referendum held as a result of the Third Italian War of Independence. Venice has played an important role in the history of symphonic and operatic music, and it is the birthplace of Antonio Vivaldi. Venice has been ranked the most beautiful city in the world as of 2016. The city is facing some major challenges, however, including financial difficulties, erosion, pollution, subsidence, an excessive number of tourists in peak periods and problems caused by oversized cruise ships sailing close to the banks of the historical city.</span></p>
+        <button title="Read more" onclick="Readmore()" id="BoardBButton" class="boxstyle">Read more</button>
+    </div>
+
+    <div class="BoardE">
+        <div class="BoardEContainer">
+            
+    
+            <div id="Timezone" class="BoardEContent">
+                <h1 class="BoardEHeader">Timezone</h1>
+                <p style="margin:0%">Current time of Venice:</p>
+				<div id="clock" style="font-size:400%; overflow:hidden;"></div>
+                <p>Venice is GMT +2. This means Venice is 6 hours behind Singapore.</p>
+            </div>
+    
+            <div id="Seasonal" class="BoardEContent">
+                <h1 class="BoardEHeader">Seasonal Events</h1>
+                <p>Venice has several big events that are worth booking a trip around. Carnevale, or Carnival, takes place in February or early March (see Carnevale dates) and tons of tourists descend on Venice for two weeks of masked and costumed revelry.</p> 
+                <a href="HTMLs/Information.html#InfoEvent"><button title="View more" class="boxstyle" style="text-decoration:none;">View more</button></a>
+            </div>
+    
+            <div id="Laws" class="BoardEContent">
+                <h1 class="BoardEHeader">Local Laws</h1>
+                <p>Why it's important to know local laws? Venice is also home to thousands of people going about their everyday business. Visitors should keep that in mind.</p>
+                <a href="HTMLs/Information.html#InfoLocalLaws"><button title="View more" class="boxstyle" style="text-decoration:none;">View more</button></a>
+            </div>
+			
+			<div class="BoardETab">
+                <button title="Timezone" class="BoardETabLink" onclick="infotab(event, 'Timezone')" id="defaultOpen">Timezone</button>
+                <button title="Seasonal Events" class="BoardETabLink" onclick="infotab(event, 'Seasonal')">Seasonal Events</button>
+                <button title="Local Laws" class="BoardETabLink" onclick="infotab(event, 'Laws')">Local laws</button>
+                <a href="HTMLs/Information.html"><button title="View more" class="BoardETabLink" style="text-decoration:none;">View more</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="BoardD">
+        <h1>Italian Cusine</h1>
+        <div class="BoardDContainer">
+            <div class="BoardDTile"> 
+                <img src='Images/BoardD/Gelato.jpg'/>
+                <div class="BoardDText">
+                    <h1>Gelato</h1>
+                    <h1 class="BoardDAnimate-Text">Gelato is ice cream made in the Italian style. </h1>
+                    <p class="BoardDAnimate-Text">Gelato is simply the Italian word for ice cream. :)</p>
+                </div>
+            </div>
+
+
+            <div class="BoardDTile"> 
+                <img src='Images/BoardD/Pizza.jpg'/>
+                <div class="BoardDText">
+                    <h1>Pizza</h1>
+                    <h1 class="BoardDAnimate-Text">Pizza is a traditional Italian dish.</h1>
+                    <p class="BoardDAnimate-Text">A yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven. It can also be topped with additional vegetables, meats, and condiments, and can be made without cheese.</p>
+                </div>
+            </div>
+
+  
+            <div class="BoardDTile"> 
+                <img src='Images/BoardD/Pasta.jpg'/>
+                <div class="BoardDText">
+                    <h1>Pasta</h1>
+                    <h1 class="BoardDAnimate-Text">Pasta is a staple food of traditional Italian cuisine.</h1>
+                    <p class="BoardDAnimate-Text">Pasta is typically made from an unleavened dough of a durum wheat flour mixed with water or eggs formed into sheets or various shapes, then cooked by boiling or baking.</p>
+                </div>
+            </div>
+        </div>
+        <a href="Food.html"><button title="See more Food" class="boxstyle">See more Food</button></a>
+    </div>
+
+    <div class="BoardF">
+        <h1>Activities</h1>
+        <div class="BoardFContainer">
+            <div class="BoardFGallery">
+              <a href="HTMLs/Activities.html#Gondola">
+                <img src="Images/BoardF/Gondola.jpg" alt="Gondola Ride" title="Gondola Ride">
+              </a>
+              <div class="Fboxstyle">Gondola Ride</div>
+            </div>
+          
+            <div class="BoardFGallery">
+              <a href="HTMLs/Activities.html#Fenice">
+                <img src="Images/BoardF/Opera.jpg" alt="La Fanice Opera" title="La Fanice Opera">
+              </a>
+              <div class="Fboxstyle">La Fenice Opera</div>
+            </div>
+          
+            <div class="BoardFGallery">
+              <a href="HTMLs/Activities.html">
+                <img src="Images/BoardF/Canal.jpg#Canal" alt="Venice Food Tour" title="Venice Food Tour">
+              </a>
+              <div class="Fboxstyle">Grand Canal</div>
+            </div>
+        
+            <div class="BoardFGallery">
+              <a href="HTMLs/Activities.html">
+                <img src="Images/BoardF/Geo.jpg" alt="View More" title="View more">
+              </a>
+              <div class="Fboxstyle">View More</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="BoardJ">
+        <h1>Video</h1>
+        <div class="JVideo">
+        <iframe frameborder="0" width="650px" height="415px" src="https://biteable.com/watch/embed/venice-website-animation-1900308" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+    <div class="BoardH">
+        <h1 id="Map">Map</h1>
+        <div id="GoogleMap" style="width:100%; height:70%;"></div>
+    </div>
+
+    </div>
+</section>
+
+<footer>
+    <hr>
+    <h3>Our social Media</h3>
+    <a href="http://www.facebook.com" class="fa fa-facebook" style="box-sizing: unset"></a>
+    <a href="http://www.twitter.com" class="fa fa-twitter" style="box-sizing: unset"></a>
+    <a href="http://www.youtube.com" class="fa fa-youtube" style="box-sizing: unset"></a>
+    <a href="https://www.snapchat.com" class="fa fa-snapchat-ghost" style="box-sizing: unset"></a>
+    <a href="http://www.reddit.com" class="fa fa-reddit" style="box-sizing: unset"></a>
+
+    <h3>For enquires</h3>
+    <button class="boxstyle" id="Contact" onclick="document.getElementById('formbox').style.display='block'">Contact Us</button>
+    <div id="formbox" class="formbackground">
+        <form class="formcontent animate" method="get" action="HTMLs/FormProcessor.html">
+        <div class="formcontainer">
+            <span onclick="document.getElementById('formbox').style.display='none'" class="formclosebutton" title="Close page">&times;</span>
+            <div class="feedbackform">
+                <label for="Name">Name </label>
+                <input type="text" id="Name" name="Name" placeholder="Your name..">
+				
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email" placeholder="Someone@Example.com..">
+				
+                <label for="Subject">Subject</label>
+                <input type="text" id="Subject" name="Subject" placeholder="Subject">
+				
+                <label for="Text">Text</label>
+                <textarea id="Text" name="Text" placeholder="Write your feedback.." style="height:20%"></textarea>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        </form>
+    </div>
+</footer>
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyDpx-eRxksflj8TEl_mSWYtsywp-pvgUgY=YOUR_KEY&callback=GoogleMap"></script>
+<script>
+document.getElementById("defaultOpen").click();
+showSlides();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1%;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.ActCols {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+.ActCols img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.ActRows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Image Grid</h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="ActRows"> 
+  <div class="ActCols">
+    <img src="../Images/Activities/Basilica.jpg" style="width:100%">Blah blah
+    <img src="../Images/Activities/Gondola.jpg" style="width:100%">
+    <img src="../Images/Activities/Murano.jpg" style="width:100%">
+  </div>
+  <div class="ActCols">
+    <img src="../Images/Activities/Basilica.jpg" style="width:100%">
+    <img src="../Images/Activities/Doge.jpg" style="width:100%">
+  </div>  
+  <div class="ActCols">
+    <img src="../Images/Activities/Basilica.jpg" style="width:100%">
+    <img src="../Images/Activities/Doge.jpg" style="width:100%">
+    <img src="../Images/Activities/Murano.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

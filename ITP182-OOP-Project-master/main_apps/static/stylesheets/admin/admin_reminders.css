@@ -1,0 +1,36 @@
+.top-alert {
+    position: relative;
+    z-index: 99999;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    color: white;
+    margin: 0 4rem auto 4rem ;
+    padding: 2%;
+    background-color: rgba(249, 249, 249, 0);
+}
+
+td, th{
+    width: 20%;
+    color: black;
+}
+
+body {
+    padding-top: 3.5rem;
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    background-color: #171717;
+}
+
+.outer-div {
+    text-align: center;
+    position: relative;
+}
+.inner-div {
+    display: inline-block;
+}
+.inner-div input {
+    padding: 2%;
+}

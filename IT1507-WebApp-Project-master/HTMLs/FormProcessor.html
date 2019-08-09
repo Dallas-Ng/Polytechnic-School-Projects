@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Style.css">
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Activities.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="../Images/icon.png" />
+<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<script src="../Scripts/Scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venice</title>
+</head>
+
+<body>
+
+<header>
+    <h1> Dallas Ng (180522Y) </h1>
+    <p> Web Application Assignment IT1507 </p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../index.html" title="Home">Home</a></li>
+    <li><a href="Information.html" title="BasicInformation">Information</a></li>
+    <li><a href="Food.html" title="Food">Food</a></li>
+    <li><a href="Activities.html" title="Activities">Activites</a></li>
+    <li><a href="../index.html#Map" title="Map">Map</a></li>
+    <div class="search-bar">
+		<form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+			<button type="submit" name="b1"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search" name="t1" id="t1">
+		</form>
+	</div>
+  </ul>
+</nav>
+
+
+<button onclick="topFunction()" id="GoToTopBtn" title="Go to top" style="display:none">Top</button>
+
+<body>
+<script type="text/javascript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
+var formData = location.search;
+
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+	formData = formData.replace("+", " ");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+for (var i=0; i < formArray.length; ++i) {
+	document.writeln(formArray[i] + "<br />");
+}
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,94 @@
+* {
+    color:black;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back {
+    margin: 1% 2%;
+    padding: 1%;
+}
+
+
+table, td, th{
+    text-align: center;
+}
+
+.dropdown button{
+    width: 100%;
+    min-width: 200px;
+}
+.dropdown a{
+    width: 100%;
+    min-width: 200px;
+}
+
+.topcard {
+    color: black;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+    height: 130px;
+}
+
+.topcard:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.topcard h3{
+    font-weight: 600;
+}
+
+.topcard img{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-height: 120px;
+}
+
+.topcard-0{
+    background-image: url('../../images/booking/admin/card1.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+.topcard-1{
+    background-image: url('../../images/booking/admin/card1.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+.topcard-2{
+    background-image: url('../../images/booking/admin/card2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+.topcard-3{
+    background-image: url('../../images/booking/admin/card3.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+.small_row {
+    width: 5%;
+}
+
+.words {
+    color: black;
+}
+
+hr {
+    background-color: white;
+}

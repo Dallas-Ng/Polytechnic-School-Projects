@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title> Feedback Form </title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <style>
+            .form-signin {
+                margin: 0 4%;
+                background-color: whitesmoke;
+            }
+
+
+        </style>
+    </head>
+
+
+    <body class="text-center">
+        <h1>  </h1>
+        {% from '/library_html/form_template.html' import render_field %}
+
+            <form method="post" class="form-signin">
+                <h1> Feedback Form </h1>
+                <h1 class="h3 mb-3 font-weight-normal">Please fill in the form</h1>
+                <hr>
+                <div class="form-group">
+                    {{ render_field(form.cleanliness) }}
+                </div>
+
+                <div class="form-group">
+                    {{ render_field(form.punctuality) }}
+                </div>
+
+                <div class="form-group">
+                    {{ render_field(form.faulty) }}
+                </div>
+
+                <div class="form-group">
+                    {{ render_field(form.vandalism) }}
+                </div>
+
+                <div class="form-group">
+                    {{ render_field(form.map) }}
+                </div>
+
+                <div class="form-group">
+                    {{ render_field(form.payment) }}
+                </div>
+
+                <div class="form-group">
+                    {{ render_field(form.account) }}
+                </div>
+
+                <div class="form-group">
+                    {{ render_field(form.aesthetic) }}
+                </div>
+
+                <br>
+                    <input class="btn btn-success" type="submit" value="Submit">
+                <br>
+                <div>
+                    <br>
+            <a href='/overview/'> <button type="button" class="btn btn-primary"> Back </button></a>
+                </div>
+                <br>
+            </form>
+
+
+
+    </body>
+</html>

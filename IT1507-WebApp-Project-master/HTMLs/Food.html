@@ -1,0 +1,190 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Style.css">
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Food.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="../Images/icon.png" />
+<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<script src="../Scripts/Scripts.js"></script>
+<script src="../Scripts/Food.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venice</title>
+</head>
+
+<body>
+
+<header>
+  	<h1> Dallas Ng (180522Y) </h1>
+    <p> Web Application Assignment IT1507 </p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../index.html" title="Home">Home</a></li>
+    <li><a href="Information.html" title="BasicInformation">Information</a></li>
+    <li><a href="Food.html" title="Food">Food</a></li>
+    <li><a href="Activities.html" title="Activities">Activites</a></li>
+    <li><a href="../index.html#Map" title="Map">Map</a></li>
+	<li><a href="#Contact" title="Contact-Us">Contact Us</a></li>
+    <div class="search-bar">
+		<form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+			<button type="submit" name="b1"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search" name="t1" id="t1">
+		</form>
+	</div>
+  </ul>
+</nav>
+
+<section>
+
+	<button onclick="topFunction()" id="GoToTopBtn" title="Go to top" style="display:none">Top</button>
+
+	<div class="FoodGalleryContainer">
+	
+		<div class="FoodHeader">
+            <div class="FoodImage">
+                <div class="FoodImageText">
+                    <h1>Venice's Classical Dishes</h1>
+                </div>
+            </div>
+        </div>
+
+		<div id="FoodBtnContainer">
+			<button class="FoodBtn" id="but_1" title="All" onclick="filterSelection('all')"> Show all</button>
+			<button class="FoodBtn" id="but_2" title="Light Meal" onclick="filterSelection('Light_meal')"> Light meal</button>
+			<button class="FoodBtn" id="but_3" title="Heavy Meal" onclick="filterSelection('Heavy_meal')"> Heavy meal</button>
+		</div>
+		
+		<div class="FoodRow">
+			<div class="FoodColumn Heavy_meal">
+				<div class="FoodContent">
+					<a href="https://en.wikipedia.org/wiki/Carbonara" target="_blank" style="text-decoration:None; color:black;" title="Carbonara"><img src="../Images/Food/Carbonara.jpeg" style="width:100%" class="FoodImg">
+					<h2 class="Heavy">Carbonara Pasta</h2>
+					<p>Carbonara is an Italian pasta dish from Rome made with egg, hard cheese, guanciale, and pepper. The recipe is not fixed by a specific type of hard cheese or pasta.</p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Heavy_meal">
+				<div class="FoodContent">
+					<a href="https://en.wikipedia.org/wiki/Spaghetti" style="text-decoration:None; color:black;" title="Spaghetti"><img src="../Images/Food/Pasta.jpg" style="width:100%" class="FoodImg">
+					<h2 class="Heavy">Spaghetti</h2>
+					<p>Spaghetti is a long, thin, solid, cylindrical pasta. Spaghettoni is a thicker form of spaghetti, while capellini is a very thin spaghetti. It is a staple food of traditional Italian cuisine.</p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Light_meal">
+				<div class="FoodContent">
+					<a href="https://en.wikipedia.org/wiki/Pizza" target="_blank" style="text-decoration:None; color:black;" title="Pizza"><img src="../Images/Food/Pizza.jpg" style="width:100%" class="FoodImg">
+					<h2 class="Light">Pizza</h2>
+					<p>Pizza is a traditional Italian dish consisting of a yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven.</p>
+				</div></a>
+			</div>
+  
+			<div class="FoodColumn Light_meal">
+				<div class="FoodContent">
+					<a href="https://en.wikipedia.org/wiki/Gelato" target="_blank" style="text-decoration:None; color:black;" title="Gelato"><img src="../Images/Food/Gelato.jpg"  style="width:100%" class="FoodImg">
+					<h2 class="Light">Gelato</h2>
+					<p>Gelato is simply the Italian word for ice cream, but in English, it has come to mean specifically Italian or Italian-style ice cream.</p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Heavy_meal">
+				<div class="FoodContent">
+					<a href="http://memoriediangelina.com/2010/05/31/bistecca-alla-fiorentina/" target="_blank" style="text-decoration:None; color:black;" title="Fiorentina Steak"><img src="../Images/Food/FiorentinaSteak.jpg"  style="width:100%" class="FoodImg">
+					<h2 class="Heavy">Fiorentina Steak</h2>
+					<p>A simply prepared Porterhouse steak, grilled rare, over a wood fire: bistecca alla fiorentina, or literally Steak Florentine.</p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Heavy_meal">
+				<div class="FoodContent">
+					<a href="https://en.wikipedia.org/wiki/Lasagne" target="_blank" style="text-decoration:None; color:black;" title="Lasagna"><img src="../Images/Food/Lasagna.jpg"  style="width:100%" class="FoodImg">
+					<h2 class="Heavy">Lasagna</h2>
+					<p>Lasagna is a type of pasta that is made by layers of flat pasta with sauce in between. It is alternated with with other ingredients such as meat and cheese.</p>
+				</div></a>
+			</div>
+
+			<div class="FoodColumn Light_meal">
+				<div class="FoodContent">
+					<a href="https://en.wikipedia.org/wiki/Saltimbocca" target="_blank" style="text-decoration:None; color:black;" title="Saltimbocca"><img src="../Images/Food/Saltimbocca.jpeg"  style="width:100%" class="FoodImg">
+					<h2 class="Light">Saltimbocca</h2>
+					<p>Saltimbocca is an Italian dish made of veal lined or wrapped with prosciutto and sage; marinated in wine, oil or saltwater depending on the region or one's own taste. </p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Heavy_meal">
+				<div class="FoodContent">
+					<a href="https://en.wikipedia.org/wiki/Ribollita" target="_blank" style="text-decoration:None; color:black;" title="Ribollita"><img src="../Images/Food/Ribollita.jpg"  style="width:100%" class="FoodImg">
+					<h2 class="Heavy">Ribollita</h2>
+					<p>Ribollita is a famous Tuscan bread soup, a hearty potage made with bread and vegetables. There are many variations but the main ingredients always include leftover bread, cannellini beans and so on.</p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Heavy_meal">
+				<a href="https://en.wikipedia.org/wiki/Risotto" target="_blank" style="text-decoration:None; color:black;" title="Risotto"><div class="FoodContent">
+					<img src="../Images/Food/Risotto.jpeg"  style="width:100%" class="FoodImg">
+					<h2 class="Heavy">Risotto</h2>
+					<p>Risotto is a northern Italian rice dish cooked in a broth to a creamy consistency. The broth can be derived from meat, fish, or vegetables. Many types of risotto contain butter, wine, onion, and parmesan cheese.</p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Light_meal">
+				<a href="https://en.wikipedia.org/wiki/Italian_sausage" target="_blank" style="text-decoration:None; color:black;" title="Italian Sausage"><div class="FoodContent">
+					<img src="../Images/Food/Sausage.jpg"  style="width:100%" class="FoodImg">
+					<h2 class="Light">Italian Sausage</h2>
+					<p>It is a pork sausage. The sausage is often noted for being seasoned with fennel or anise as the primary seasoning. </p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Light_meal">
+				<a href="https://en.wikipedia.org/wiki/Panna_cotta" target="_blank" style="text-decoration:None; color:black;" title="Panna Cotta"><div class="FoodContent">
+					<img src="../Images/Food/Pannacotta.jpg"  style="width:100%" class="FoodImg">
+					<h2 class="Light">Panna Cotta</h2>
+					<p>Panna Cotta (Cooked cream), it is a Italian desert of sweetened cream thickened with gelatin and molded. The cream may be aromatized with coffee, vanilla, or other flavorings.</p>
+				</div></a>
+			</div>
+			<div class="FoodColumn Light_meal">
+				<a href="https://en.wikipedia.org/wiki/Gnocchi" target="_blank" style="text-decoration:None; color:black;" title="Gnocchi"><div class="FoodContent">
+					<img src="../Images/Food/Gnocchi.jpg"  style="width:100%" class="FoodImg">
+					<h2 class="Light">Gnocchi</h2>
+					<p>Gnocchi are various thick, small, and soft dough dumplings that may be made from semolina, ordinary wheat flour, egg, cheese, potato, breadcrumbs, cornmeal and so on.</p>
+				</div></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+    <hr>
+    <h3>Our social Media</h3>
+    <a href="http://www.facebook.com" class="fa fa-facebook" style="box-sizing: unset"></a>
+    <a href="http://www.twitter.com" class="fa fa-twitter" style="box-sizing: unset"></a>
+    <a href="http://www.youtube.com" class="fa fa-youtube" style="box-sizing: unset"></a>
+    <a href="https://www.snapchat.com" class="fa fa-snapchat-ghost" style="box-sizing: unset"></a>
+    <a href="http://www.reddit.com" class="fa fa-reddit" style="box-sizing: unset"></a>
+
+    <h3>For enquires</h3>
+    <button class="boxstyle" id="Contact" onclick="document.getElementById('formbox').style.display='block'">Contact Us</button>
+    <div id="formbox" class="formbackground">
+        <form class="formcontent animate" method="get" action="HTMLs/FormProcessor.html">
+        <div class="formcontainer">
+            <span onclick="document.getElementById('formbox').style.display='none'" class="formclosebutton" title="Close page">&times;</span>
+            <div class="feedbackform">
+                <label for="Name">Name </label>
+                <input type="text" id="Name" name="Name" placeholder="Your name..">
+				
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email" placeholder="Someone@Example.com..">
+				
+                <label for="Subject">Subject</label>
+                <input type="text" id="Subject" name="Subject" placeholder="Subject">
+				
+                <label for="Text">Text</label>
+                <textarea id="Text" name="Text" placeholder="Write your feedback.." style="height:20%"></textarea>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        </form>
+    </div>
+</footer>
+
+</body>
+
+<script>
+filterSelection("all")
+</script>
+</html>

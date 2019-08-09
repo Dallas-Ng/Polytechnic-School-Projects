@@ -1,0 +1,19 @@
+﻿body {
+    background-image: url(../Img/Dashboard_Background.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: top;
+    background-color: black;
+}
+
+table {
+    background-color: #fff;
+}
+
+.whiteout {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.b-white {
+    background-color: white;    
+}

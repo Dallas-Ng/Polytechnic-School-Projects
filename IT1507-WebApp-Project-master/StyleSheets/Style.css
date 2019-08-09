@@ -1,0 +1,295 @@
+/*MAIN BODY===============================================*/
+* {
+    box-sizing: border-box;
+}
+body {
+	font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+p {
+	font-family: 'Amaranth', sans-serif;
+}
+
+/*MAIN BUTTON DESIGN ===================================================*/
+.boxstyle {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.boxstyle:hover {
+    background-color:#555555;
+    border: 2px solid #555555;
+    color: white;
+}
+
+.img {
+    vertical-align: middle;
+    object-fit: contain;
+    height: 400px;
+    min-width: 400px;
+}
+
+/*GO TO TOP BUTTON ===================================================*/
+#GoToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: #555555;
+    color: white;
+    border: 0px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#GoToTopBtn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+}
+
+/*NAVIGATION BAR ===================================================*/
+nav {
+    font-weight: bold;
+    font-size: 15px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: sticky;
+    top: -1;
+    z-index: 99;
+    width:100%;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav .search-bar {
+    float: right;
+}
+
+nav input[type=text] { /*SEARCH BOX STYLE*/
+	float: right;
+    padding: 5px;
+    height: 30px;
+    width: 180px;
+    border: none;
+    margin: 8px 5px 0px 0px;
+    font-size: 14px;
+}
+
+nav .search-bar button {
+    float: right;
+    padding: 6.5px 10px;
+    margin: 8px 16px 0px -5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 2px;
+    overflow: hidden; /*Prevents Clipping*/
+    border: 1px solid #e7e7e7;
+}
+
+nav li {
+    float: left; /*Aligns*/
+    border-right: 1px solid #e7e7e7;
+    width: 130px;
+    height: 45px;
+}
+
+nav li a {
+    display: block; /*Creates Block*/
+    color: #666; /*MAKES TEXT GREY*/
+    text-align: center;
+    padding: 14px;
+    text-decoration: none /*Removes Underlines*/
+}
+
+/*FOOTER ===================================================*/
+footer {
+    background-color: #f8f8f8;
+    margin: 0.2%;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	clear:both;
+	overflow:hidden;
+}
+
+footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+footer .fa:hover {
+    opacity: 0.9;
+}
+
+/*IMPORTED PICTURES LAZY TO ADD MIGHT ADD LATER?? ===================================================*/
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+/*FEEDBACK STUFF ===================================================*/
+footer input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+footer input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+footer input[type=submit]:hover {
+    background-color:#555555;
+    border: 2px solid #555555;
+    color: white;
+}
+
+.feedbackform {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5%;
+}
+
+/*FORM ===================================================*/
+.formcontainer {
+    text-align: center;
+    position: relative;
+}
+
+.formcontent {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    max-width: 20%;
+}
+
+.formbackground {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+/* close shit */
+.formclosebutton {
+    position: absolute;
+    right: 4%;
+    top: -2%;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.formclosebutton:hover, .formclosebutton:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+/*ANIMATIONS ===================================================*/
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/*FOR MOBILE ONLY ===================================================*/
+@media (max-width: 1400px) {
+	nav .search-bar {
+		display:none;
+	}
+  .feedbackform {
+    margin: 1%;
+  }
+  .formcontent{
+    width:100%;
+    max-width:70%;
+    margin:0 auto;
+    margin-top:: 3%;
+  }
+}
+@media (max-width:500px) {
+  .formcontent{
+    width:100%;
+    max-width:70%;
+    margin:0 auto;
+    margin-top:: 20%;
+  }
+}

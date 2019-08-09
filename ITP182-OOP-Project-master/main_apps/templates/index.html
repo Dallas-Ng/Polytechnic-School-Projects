@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title> Home </title>
+
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/index.css') }}">
+    </head>
+
+    <body style="padding-top: 3.5rem;">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="/home/">Instantic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                </ul>
+
+                <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">
+                   Sign in
+                </button>
+
+            </div>
+        </nav>
+
+        <main role="main">
+            <div class="top-alert">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert" id="myAlert">
+                        <strong> {{ message }} </strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endwith %}
+            </div>
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron" style="padding-bottom: 90px;">
+                <div class="container">
+                    <h1 class="display-1">THE FUTURE IS NOW</h1>
+                    <p style="font-size: 120%;"> Autonomous cars are the future, are you willing to enjoy yourself? </p>
+                    <p><a class="btn btn-dark" href="/about" role="button">Learn more &raquo;</a></p>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Fare pricings</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-secondary" href="/about#Fares" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Locations</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-secondary" href="/about#Location" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Rewards</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p><a class="btn btn-secondary" href="/about#Rewards" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="login-wrap">
+                            <div class="login-html">
+                                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+
+                                <div class="login-form">
+                                    <form method="post">
+                                        <div class="sign-in-htm">
+                                            <div class="group">
+                                                <label for="sign_username" class="label">Username</label>
+                                                <input name='sign_username' id="sign_username" type="text" class="input" required>
+                                            </div>
+                                            <div class="group">
+                                                <label for="sign_password" class="label">Password</label>
+                                                <input name='sign_password' id="sign_password" type="password" class="input" data-type="password" required>
+                                            </div>
+                                            <div class="group">
+                                                <input type="submit" class="button" value="Sign In">
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="foot-lnk">
+                                                <a href="/forgot">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form method="post">
+                                        <div class="sign-up-htm">
+                                            <div class="group">
+                                                <label for="reg_username" class="label">Username</label>
+                                                <input name='reg_username' id="reg_username" type="text" class="input" required pattern=".{6,}" title="6 characters minimum">
+                                            </div>
+                                            <div class="group">
+                                                <label for="reg_name" class="label">Name</label>
+                                                <input name='reg_name' id="reg_name" type="text" class="input" required pattern=".{2,}" title="2 characters minimum">
+                                            </div>
+                                            <div class="group">
+                                                <label for="reg_password" class="label">Password</label>
+                                                <input name='reg_password' id="reg_password" type="password" class="input" data-type="password" required pattern=".{6,}" title="6 characters minimum">
+                                            </div>
+                                            <div class="group">
+                                                <label for="reg_confirm_password" class="label">Confirm Password</label>
+                                                <input name='reg_confirm_password' id="reg_confirm_password" type="password" class="input" data-type="password" required pattern=".{6,}" title="6 characters minimum">
+                                            </div>
+                                            <div class="group">
+                                                <label for="reg_email" class="label">Email Address</label>
+                                                <input name='reg_email' id="reg_email" type="email" class="input" required>
+                                            </div>
+                                            <div class="group">
+                                                <input type="submit" class="button" value="Sign Up">
+                                            </div>
+                                            <div class="hr"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="container">
+                <p>&copy; Instantic 2018-2019 | ITP182-01 | Dallas Ng | Tjandra Putra | Randy Chong | Faris Qamarul </p>
+            </footer>
+
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+            var password = document.getElementById("reg_password")
+                , confirm_password = document.getElementById("reg_confirm_password");
+
+            function validatePassword(){
+                if(password.value != confirm_password.value) {
+                    confirm_password.setCustomValidity("Passwords Don't Match");
+                } else {
+                    confirm_password.setCustomValidity('');
+                }
+            }
+            password.onchange = validatePassword;
+            confirm_password.onkeyup = validatePassword;
+        </script>
+    </body>
+</html>

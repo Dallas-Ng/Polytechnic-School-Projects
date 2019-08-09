@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Barcode</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
+        <script src="JsBarcode.all.min.js"></script>
+
+        <style>
+            .main {
+                margin: 3.5rem auto;
+            }
+            .card {
+                margin: auto;
+            }
+            body {
+                background-image: url('{{ url_for('static', filename='images/booking/barcode.jpg') }}');
+                background-size: cover;
+                background-repeat: no-repeat;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+
+            <div class="card" style="width: 18rem;">
+                <svg class="card-img-top" id="barcode"></svg>
+
+                <div class="card-body">
+                    <h5 class="card-title"> Hey! scan this in the car to register your ride. </h5>
+                    <p class="card-text"> This ride is to go to {{ location }} </p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> Date: {{ date }} </li>
+                    <li class="list-group-item"> Time: {{ time }} </li>
+                    <li class="list-group-item"> Fare: ${{ fare }} </li>
+                    <li class="list-group-item"> School: {{ school }} </li>
+                    <li class="list-group-item"> Completed: {{ completed }} </li>
+
+                </ul>
+
+                <div class="card-body">
+                    <a href="/{{ back }}"> <button type="button" class="btn btn-danger" style="display: inline-block;"> Back </button> </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            JsBarcode("#barcode", "{{ barcode }}");
+        </script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

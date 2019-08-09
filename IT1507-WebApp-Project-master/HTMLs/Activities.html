@@ -1,0 +1,163 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Style.css">
+<link rel="stylesheet" type="text/css" href="../StyleSheets/Activities.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="../Images/icon.png" />
+<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<script src="../Scripts/Scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venice</title>
+</head>
+
+<body>
+
+<header>
+    <h1> Dallas Ng (180522Y) </h1>
+    <p> Web Application Assignment IT1507 </p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../index.html" title="Home">Home</a></li>
+    <li><a href="Information.html" title="BasicInformation">Information</a></li>
+    <li><a href="Food.html" title="Food">Food</a></li>
+    <li><a href="Activities.html" title="Activities">Activites</a></li>
+    <li><a href="../index.html#Map" title="Map">Map</a></li>
+	<li><a href="#Contact" title="Contact-Us">Contact Us</a></li>
+    <div class="search-bar">
+		<form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='') parent.findString(this.t1.value);return false;">
+			<button type="submit" name="b1"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search" name="t1" id="t1">
+		</form>
+	</div>
+  </ul>
+</nav>
+
+<section>
+    <button onclick="topFunction()" id="GoToTopBtn" title="Go to top" style="display:none">Top</button>
+
+    <div class="Sectioncontainer">
+        
+        <div class="ActHeader">
+            <div class="ActImage">
+                <div class="ActImageText">
+                    <h1>Venice's Point of Interests</h1>
+                </div>
+            </div>
+        </div>
+
+        <h3>Click to view!</h3>
+
+        <div class="ActRows"> 
+            <div class="ActCols">
+				<div class="Actbox">
+					<h4>Basilica</h4>
+					<a href="https://en.wikipedia.org/wiki/Basilica"><img src="../Images/Activities/Basilica.jpg">
+					<p>The opulent Saint Mark’s Basilica is arguably the jewel in Venice’s crown. With its multi-leveled domes, intricate facades and stunning mosaics, it’s a marvel of Italo-Byzantine architecture.</p></a>
+                </div>
+				
+				<div class="Actbox">
+					<h4>Gondola</h4>
+					<a href="https://en.wikipedia.org/wiki/Gondola" id="Gondola"><img src="../Images/Activities/Gondola.jpg">
+					<p>While gondolas were once regularly used by Venetians, especially of the upper classes, today vaporetti have become the main form of water transportation in Venice.</p></a>
+				</div>
+				
+				<div class="Actbox">
+					<h4>Murano</h4>
+					<a href="https://en.wikipedia.org/wiki/Murano"><img src="../Images/Activities/Murano.jpg">
+					<p>Murano is a series of islands linked by bridges in the Venetian Lagoon, northern Italy. It is famous for its glass making.</p></a>
+				</div>
+				
+			</div>
+            <div class="ActCols">
+			
+				<div class="Actbox">
+					<h4>Doge Palace</h4>
+					<a href="https://en.wikipedia.org/wiki/Doge%27s_Palace"><img src="../Images/Activities/Doge.jpg">
+					<p>The wow-factor of the Doge’s Palace's majestic marble exterior is only exceeded by the treasures held within – history buffs and aficionados of classical art will never want to leave.</p></a>
+                </div>
+				
+				<div class="Actbox">
+					<h4>La Fenice</h4>
+					<a href="https://en.wikipedia.org/wiki/La_Fenice" id="Fenice"><img src="../Images/Activities/Lafenice.jpg">
+					<p>Teatro La Fenice is an opera house in Venice, Italy. It is one of "the most famous and renowned landmarks in the history of Italian theatre" and in the history of opera as a whole. Especially in the 19th century, La Fenice became the site of many famous operatic premieres at which the works of several of the four major bel canto era composers – Rossini, Bellini, Donizetti, Verdi – were performed.</p></a>
+                </div>
+				
+				<div class="Actbox">
+					<h4>Campanile</h4>
+					<a href="https://en.wikipedia.org/wiki/St_Mark%27s_Campanile"><img src="../Images/Activities/Tower.jpg">
+					<p>St Mark's Campanile is the bell tower of St Mark's Basilica in Venice, Italy, located in the Piazza San Marco. It is one of the most recognizable symbols of the city.</p></a>
+				</div>
+				
+			</div>  
+            <div class="ActCols">
+			
+				<div class="Actbox">
+					<h4>Bridge of Sighs</h4>
+					<a href="https://en.wikipedia.org/wiki/Bridge_of_Sighs"><img src="../Images/Activities/Sighs.jpg">
+					<p>When riding a Gondola with your loved one, make sure to pass the Bridge of Sighs – Venetian lore vows that a kiss under the bridge will grant couples eternal love and happiness.</p></a>
+                </div>
+				
+				<div class="Actbox">
+					<h4>Basilica</h4>
+					<a href="https://en.wikipedia.org/wiki/Rialto_Bridge"><img src="../Images/Activities/Rialto.jpg">
+					<p>The Rialto Bridge is the oldest and most ravishing bridge across Grand Canal. Get up early to beat the crowds and enjoy the spectacular views at your leisure, you won’t regret it.</p></a>
+                </div>
+				
+				<div class="Actbox">
+					<h4>Lido di Venezia</h4>
+					<a href="https://en.wikipedia.org/wiki/Lido_di_Venezia"><img src="../Images/Activities/Lido.jpg">
+					<p>Take a breather from the touristic bustle and visit the charming Lido di Venezia. A short boat ride from the center, it’s where some of Venice’s best (and cheapest!) restaurants are hidden.</p></a>
+                </div>
+				
+				<div class="Actbox">
+					<h4>Grand Canal</h4>
+					<a href="https://en.wikipedia.org/wiki/Grand_Canal_(Venice)" id="Canal"><img src="../Images/Activities/Canal.jpg">
+					<p>The Grand Canal is Venice’s main boulevard – made of water! Hop on a waterbus, taxi-boat or an iconic gondola and float past the gorgeous historic buildings lining the canal banks.</p></a>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <hr>
+    <h3>Our social Media</h3>
+    <a href="http://www.facebook.com" class="fa fa-facebook" style="box-sizing: unset"></a>
+    <a href="http://www.twitter.com" class="fa fa-twitter" style="box-sizing: unset"></a>
+    <a href="http://www.youtube.com" class="fa fa-youtube" style="box-sizing: unset"></a>
+    <a href="https://www.snapchat.com" class="fa fa-snapchat-ghost" style="box-sizing: unset"></a>
+    <a href="http://www.reddit.com" class="fa fa-reddit" style="box-sizing: unset"></a>
+
+    <h3>For enquires</h3>
+    <button class="boxstyle" id="Contact" onclick="document.getElementById('formbox').style.display='block'">Contact Us</button>
+    <div id="formbox" class="formbackground">
+        <form class="formcontent animate" method="get" action="HTMLs/FormProcessor.html">
+        <div class="formcontainer">
+            <span onclick="document.getElementById('formbox').style.display='none'" class="formclosebutton" title="Close page">&times;</span>
+            <div class="feedbackform">
+                <label for="Name">Name </label>
+                <input type="text" id="Name" name="Name" placeholder="Your name..">
+				
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email" placeholder="Someone@Example.com..">
+				
+                <label for="Subject">Subject</label>
+                <input type="text" id="Subject" name="Subject" placeholder="Subject">
+				
+                <label for="Text">Text</label>
+                <textarea id="Text" name="Text" placeholder="Write your feedback.." style="height:20%"></textarea>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        </form>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+﻿body, html {
+    /*margin-top: 25px;*/
+}
+
+#DashboardBanner {
+    background-image: url("../Img/Dashboard/Background_1.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40%;
+    padding: 7rem 0;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#Recent {
+    font-size: 0.8rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: white !important;
+}
+
+
+.green {
+    border-top: 3px rgb(62, 209, 83) solid;
+}
+
+.blue {
+    border-top: 3px rgb(64, 153, 220) solid;
+}
+
+.red {
+    border-top: 3px rgb(221, 67, 67) solid;
+}
+
+.link, .link:visited {
+    color: black;
+}
+
+    .link:hover {
+        text-decoration: none;
+        color: rgb(64, 153, 220);
+    }
+
+.ccc {
+    width: 150px;
+    text-align: center;
+    border-radius: 0;
+}
+
+#ProfilePicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#ib_Settings {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+    #ib_Settings:hover {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+@media only screen and (max-width: 900px) {
+    #DashboardBanner {
+        background-repeat: no-repeat;
+        background-size: auto;
+        font-size: 1.2rem;
+        padding: 5rem 0;
+    }
+
+    #lbl_Username {
+        font-size: 2rem;
+    }
+
+    #ProfilePicture {
+        width: 75px;
+        height: 75px;
+    }
+
+    #CoursesNumber {
+        display: none;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+
+    .p-2 {
+        padding: .5rem 0 !important;
+    }
+
+    footer {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    #pills-home > div.container-fluid.my-5 > div > a > div, #pills-home > div:nth-child(2) > div > a > div {
+        width: 85vw !important;
+    }
+
+    #navbarTogglerDemo01 {
+        background-color: rgba(0, 0, 0, 0.81);
+        justify-content: flex-start;
+    }
+
+    .card img {
+        display: none;
+    }
+}

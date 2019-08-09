@@ -1,0 +1,28 @@
+.booking_form {
+    max-width: 200px;
+}
+
+td, th{
+    width: 10%;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    margin: 2%;
+
+}
+
+.top-alert {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+#logout {
+    color: inherit;
+    text-decoration: none;
+}
