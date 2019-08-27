@@ -34,11 +34,13 @@
 	Features
 		1) Logging in and Sign Up are both on a modal
 		2) Log out button on each webpage
-		3) Logging out and signing will trigger a function to record last seen so that its updated on the overview page.
+		3) Logging out and signing will trigger a function to record last seen so that its updated 
+			on the overview page.
 	Validations
 		1) Username on creation will be defaulted to lower caps.
 		2) When signing in password will be validated.
-		3) When creating account, email must be formatted, username must be more than 6 characters and passwords must match.
+		3) When creating account, email must be formatted, username must be more than 6 characters and
+			passwords must match.
 		4) On Sign in, username can be capitalised, but password must be exactly the same on sign up.
 		5) After logging out, clicking to go back will not allow you to view the page without signing in again.
 
@@ -54,7 +56,8 @@
 		Features
 			1) Bookings Creation / Edit / Deletion
 			2) Bookings will create a barcode to allow the user to scan when boarding the car
-			3) Fares are calculated by location only, [Yishun-10, Woodlands-2, Yio Chu Kang-4, Ang Mo Kio-5]
+			3) Fares are calculated by location only, 
+				[Yishun-10, Woodlands-2, Yio Chu Kang-4, Ang Mo Kio-5]
 			3) Bookings can be sorted by [All, Today, Today Complete, Today Uncomplete, Past, Future]
 			4) Viewing past bookings will allow you to create a feedback for that booking
 			5) /A/Bookings can be undeleted by admin
