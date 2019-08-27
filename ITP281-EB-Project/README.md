@@ -18,9 +18,7 @@ Certcess is an online e-commerce education company that strives to deliver cheap
 
 ## Features
 
-### Account System - Dallas
-Every feature listed under this is done by Dallas only.
-
+### Account System
 ```
 All Account Types:
 	1) Reset password through link
@@ -63,8 +61,10 @@ Admins:
 	e) Do real time searches on view page
 	f) Double filter
 	g) Check statistics
-	
-Validations
+```
+
+### Validations
+```
 1) All pages
 	a) Checks if user is logged in
 	b) Redirects back to index when session expires (60 minutes)
@@ -108,39 +108,4 @@ Validations
 			this prevents the user from reusing other emails
 9) Shop/Courses
 	a) Removes any courses already enrolled by the user
-```
-### Inquiry Support - Tjandra 
-```
-Customer
-	1) Submit filtered information form
-Admin
-	1) Edit to add comment on submitted form 
-	2) Update comment
-	3) Search for filtering
-	4) Dropdownlist filtering
-	5) Send email to customers for reply
-	6) Delete forms, Confirm on deletion
-Validations
-Customer page
-	1) Required field
-Admin page
-	1) Required field
-
-Notification - Tjandra 
-
-```
-
-### Notification Feature - Tjandra
-```
-Customer
-	1) Receive notifications in real time
-Admin
-	1) Sends notifications in real time
-	2) Sends SMS messages in real time
-	3) Sends Email
-	4) Delete notifications, Confirm on deletion
-Validations
-Admin page:
-	1) Required field
-
 ```
