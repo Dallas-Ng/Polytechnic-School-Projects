@@ -18,5 +18,6 @@ Developed with C#, ASP.NET, SQL, Azure
  1. Created and managed a online SQL database with views and roles
  2.  Implemented  security features like authorization and authentication logic in all web pages
  3. Used  Three-Tier Architecture in the website
- 4. Deployed and managed version control with Azure and Git
- 5. Implemented fully responsive design
+ 4. Created a login system with extended features like a lockout system and mailing list
+ 5. Deployed and managed version control with Azure and Git
+ 6. Implemented fully responsive design
