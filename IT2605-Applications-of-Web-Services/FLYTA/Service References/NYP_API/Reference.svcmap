@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="820438ea-be87-4a8c-bf39-948be84bc9bd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61318/NYP_WS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NYP_WS.disco" MetadataType="Disco" ID="54a46cf2-1c89-4d53-bf54-685e01487d3e" SourceId="1" SourceUrl="http://localhost:61318/NYP_WS.svc?disco" />
+    <MetadataFile FileName="NYP_WS.wsdl" MetadataType="Wsdl" ID="ab60faf7-7f1f-455e-862d-d8a2d2d831fe" SourceId="1" SourceUrl="http://localhost:61318/NYP_WS.svc?wsdl" />
+    <MetadataFile FileName="NYP_WS.xsd" MetadataType="Schema" ID="113545c4-45e7-43c2-abe6-7c51b4c9f193" SourceId="1" SourceUrl="http://localhost:61318/NYP_WS.svc?xsd=xsd1" />
+    <MetadataFile FileName="NYP_WS1.xsd" MetadataType="Schema" ID="43ea6050-0120-41b6-aa9f-03f1b03526b9" SourceId="1" SourceUrl="http://localhost:61318/NYP_WS.svc?xsd=xsd0" />
+    <MetadataFile FileName="NYP_WS2.xsd" MetadataType="Schema" ID="81e8f1d3-fe87-42fb-b192-981a60eb077d" SourceId="1" SourceUrl="http://localhost:61318/NYP_WS.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYP", "NYP\NYP.csproj", "{E5DA6414-DF96-4711-ADB1-251E84DA5372}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1772636-D184-472C-9D46-4E18C21E9437} = {F1772636-D184-472C-9D46-4E18C21E9437}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLYTA", "FLYTA\FLYTA.csproj", "{F1772636-D184-472C-9D46-4E18C21E9437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5DA6414-DF96-4711-ADB1-251E84DA5372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5DA6414-DF96-4711-ADB1-251E84DA5372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5DA6414-DF96-4711-ADB1-251E84DA5372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5DA6414-DF96-4711-ADB1-251E84DA5372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1772636-D184-472C-9D46-4E18C21E9437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1772636-D184-472C-9D46-4E18C21E9437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1772636-D184-472C-9D46-4E18C21E9437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1772636-D184-472C-9D46-4E18C21E9437}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

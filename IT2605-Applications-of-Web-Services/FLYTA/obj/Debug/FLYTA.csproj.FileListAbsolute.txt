@@ -1,0 +1,66 @@
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\obj\Debug\FLYTA.csprojResolveAssemblyReference.cache
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\ApplicationInsights.config
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\csc.exe
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\vbc.exe
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\FLYTA.dll.config
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\FLYTA.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\FLYTA.pdb
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.Web.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.Web.xml
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\obj\Debug\FLYTA.dll
+C:\Users\Dallas\Desktop\New folder\NYP\FLYTA\obj\Debug\FLYTA.pdb
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\ApplicationInsights.config
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\csc.exe
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\vbc.exe
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\FLYTA.dll.config
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\FLYTA.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\FLYTA.pdb
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.Web.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.Web.xml
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\obj\Debug\FLYTA.csprojResolveAssemblyReference.cache
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\obj\Debug\FLYTA.dll
+C:\Users\Dallas\Documents\Git\IT2605-Applications-of-Web-Services\FLYTA\obj\Debug\FLYTA.pdb

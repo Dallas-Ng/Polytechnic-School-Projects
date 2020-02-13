@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="985bf01c-42ed-4f90-a233-6ae221a091a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61331/FLYTA_WS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FLYTA_WS.disco" MetadataType="Disco" ID="c9c43043-648c-447d-9da1-f6c3282dfe52" SourceId="1" SourceUrl="http://localhost:61331/FLYTA_WS.svc?disco" />
+    <MetadataFile FileName="FLYTA_WS.xsd" MetadataType="Schema" ID="85fb15f5-bdaf-4c48-b5a3-0d10cb036148" SourceId="1" SourceUrl="http://localhost:61331/FLYTA_WS.svc?xsd=xsd2" />
+    <MetadataFile FileName="FLYTA_WS.wsdl" MetadataType="Wsdl" ID="1e933988-fe15-4ba4-ab23-f3a03bff0c03" SourceId="1" SourceUrl="http://localhost:61331/FLYTA_WS.svc?wsdl" />
+    <MetadataFile FileName="FLYTA_WS1.xsd" MetadataType="Schema" ID="9e744230-5db3-4365-b8ea-71839ab08167" SourceId="1" SourceUrl="http://localhost:61331/FLYTA_WS.svc?xsd=xsd0" />
+    <MetadataFile FileName="FLYTA_WS2.xsd" MetadataType="Schema" ID="cad87ec4-e67a-421b-af2f-1df131390830" SourceId="1" SourceUrl="http://localhost:61331/FLYTA_WS.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
