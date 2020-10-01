@@ -2,7 +2,6 @@
 
 This repository contains school projects .
 
-- Each folder contains a ReadMe.md that documents what I did in the project.
 
 ## [Website Project (Year 1 Sem 1)](https://github.com/Dallas-Ng/School-Projects/tree/master/IT1507-WebApp-Project)
 
