@@ -28,13 +28,13 @@ Developed with .NET and SQL. Deployed with Azure services.
 5.  Deployed and managed version control with Azure and Git
 6.  Implemented fully responsive design
 
-## [Applications of Web Services (Year 2 Sem 2)](https://github.com/Dallas-Ng/School-Projects/tree/master/ITP281-EB-Project)
+## [Applications of Web Services (Year 2 Sem 2)](https://github.com/Dallas-Ng/School-Projects/tree/master/IT2605-Applications-of-Web-Services)
 
 Developed with .NET and SQL
 
 - Created and consumed web services
 
-## [Enterprise Application Project (Year 2 Sem 2)](https://github.com/Dallas-Ng/School-Projects/tree/master/ITP281-EB-Project)
+## [Enterprise Application Project (Year 2 Sem 2)](https://github.com/Dallas-Ng/School-Projects/tree/master/ITP282-Enterprise-Application-Project)
 
 Developed with .NET and SQL
 
